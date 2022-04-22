@@ -60,7 +60,7 @@
       <section class="section services">
         <div class="serv-con container">
           <h1 class="services-text">ЭФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-          <button class="button" type="button">Заказать услугу</button>
+          <button class="button" data-modal-open type="button">Заказать услугу</button>
         </div>
       </section>
 
@@ -438,10 +438,15 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button"></button>
+        <button type="button" class="button-modal" data-modal-close>
+          <svg class="styles-modal" widht="11" height="11">
+            <use href="./images/symbol-defs.svg#icon-Vec"></use>
+          </svg>
+        </button>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
