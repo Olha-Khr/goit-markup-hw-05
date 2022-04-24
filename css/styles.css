@@ -693,7 +693,7 @@ a {
   min-width: 528px;
   top: 50%;
   left: 50%;
-
+  margin-top: 221px;
   background-color: var(--primare-text-color);
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
