@@ -135,11 +135,11 @@ a {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mini-link:after {
+  transform: scale(0);
 }
 .mini-link:hover::after,
 .mini-link:focus::after,
 .mini-link.active::after {
-  transform: scale(0);
   transform: scaleX(1);
 }
 .contact-icon {
