@@ -709,7 +709,7 @@ link.active {
   color: var(--accent-color);
   border-color: var(--accent-color);
 }
-.styles-modal {
+.button-modal.styles-modal {
   color: var(--logo-studio-color);
   width: 11px;
   height: 11px;
