@@ -664,7 +664,6 @@ link.active {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms;
-  visibility: 250ms;
 }
 /* .backdrop.is-hidden.modal {
   transition-duration: 2000ms;
@@ -674,7 +673,7 @@ link.active {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
+  min-width: 528px;
   min-height: 581px;
 
   background: #ffffff;
