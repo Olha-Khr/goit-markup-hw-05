@@ -154,17 +154,17 @@ a {
   margin-right: 30px;
 }
 .contact-icon {
-  fill: currentColor;
   margin-right: 10px;
   margin-bottom: 0px;
 }
-.site-nav .mini-link::after {
+.mini-link::after {
   content: '';
   display: block;
   width: 100%;
   height: 4px;
   position: absolute;
   border-radius: 2px;
+  fill: currentColor;
   left: 0;
   bottom: -1px;
   background-color: var(--accent-color);
@@ -174,6 +174,7 @@ a {
 .mini-link:hover::after {
   transform: scaleX(1);
 }
+
 .site-nav .mini-link:hover,
 .site-nav .mini-link:focus,
 .site-nav .mini-link.active {
@@ -702,9 +703,10 @@ a {
 
 .button-modal:hover,
 .button-modal:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 .button-modal .styles-modal {
-  position: absolute;
   color: var(--logo-studio-color);
   width: 11px;
   height: 11px;
