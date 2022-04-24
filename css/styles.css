@@ -702,10 +702,9 @@ a {
 
 .button-modal:hover,
 .button-modal:focus {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
 }
 .button-modal .styles-modal {
+  position: absolute;
   color: var(--logo-studio-color);
   width: 11px;
   height: 11px;
