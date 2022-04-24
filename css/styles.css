@@ -676,37 +676,51 @@ link.active {
   transform: translate(-50%, -50%);
   width: 528px;
   min-height: 581px;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-modal {
-  display: flex;
+  display: border-box;
   position: absolute;
   top: 10px;
   right: 10px;
   width: 30px;
   height: 30px;
+  top: 8px;
+  right: 8px;
   text-align: center;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: transparent;
   fill: #000000;
-  background-color: #ffffff;
+  cursor: pointer;
+  background-color: var(--primare-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .button-modal:hover,
 .button-modal:focus {
-  background-color: white;
-  fill: var(--button-order-background-hover-focus-color);
+  color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 .styles-modal {
   color: var(--logo-studio-color);
+  width: 11px;
+  height: 11px;
+  color: currentColor;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(1.1);
 }
