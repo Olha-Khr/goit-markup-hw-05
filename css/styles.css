@@ -726,16 +726,3 @@ a {
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-/* .close-modal:hover {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
-} */
-
-.close-modal .styles-modal {
-  width: 11px;
-  height: 11px;
-  color: var(--logo-studio-color);
-  fill: currentColor;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
