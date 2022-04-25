@@ -712,6 +712,7 @@ a {
   height: 30px;
   display: flex;
   position: absolute;
+  align-items: center;
   top: 8px;
   right: 8px;
   color: var(--logo-studio-color);
